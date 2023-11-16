@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Add Task')
+@section('title', 'Edit Task')
 
 @section('styles')
     <style>
@@ -12,7 +12,7 @@
 @endsection
 
 @section('content')
-    <form method="POST" action="{{ route('tasks.update', ['id' => $task->id]) }}">
+    <form method="POST" action="{{ route('tasks.update', ['task' => $task->id]) }}">
         @csrf
         @method('PUT')
         <div class="">
@@ -37,7 +37,7 @@
         </div>
 
         <div class="">
-            <button type="submit">Edit task</button>
+            <button type="submit">Update task</button>
         </div>
 
     </form>
