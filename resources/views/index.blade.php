@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
+
 <h1>Task list</h1>
 @endsection
 
