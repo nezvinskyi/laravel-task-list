@@ -22,4 +22,8 @@
 
         </form>
     </div>
+
+    <div class="">
+        <a href="{{route('tasks.index')}}">All tasks</a>
+    </div>
 @endsection

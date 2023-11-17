@@ -23,4 +23,10 @@
     @empty
         <div class="">no task name</div> 
     @endforelse
+
+    @if($tasks->count())
+    <nav>
+        {{ $tasks->links() }}
+    </nav>
+    @endif
 @endsection
