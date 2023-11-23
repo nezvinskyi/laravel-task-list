@@ -15,6 +15,18 @@
         .link {
             @apply font-medium text-gray-700 dark:text-yellow-50 underline decoration-pink-500
         }
+
+        label{
+            @apply block uppercase text-slate-500 dark:text-yellow-50 mb-2
+        }
+
+        input, textarea {
+            @apply shadow-sm appearance-none border w-full py-2 px-3 text-slate-700 leading-tight resize-none focus:outline-none
+        }
+
+        .error {
+            @apply text-red-500 text-sm
+        }
     </style>
     {{-- blade-formatter-enable --}}
 
